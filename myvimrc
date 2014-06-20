@@ -1,5 +1,7 @@
 source ~/.vim/vimrc
 
+set clipboard=unnamed
+
 nnoremap <C-F> :CommandT<cr>
 nnoremap <f4> :BufExplorer<cr>
 colorscheme monokai

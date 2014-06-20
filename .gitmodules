@@ -111,10 +111,7 @@
 	url = https://github.com/christoomey/vim-tmux-navigator.git
 [submodule "bundle/Atomic-Save"]
 	path = bundle/Atomic-Save
-	url = https://github.com/waterlink/Atomic-Save.git
-[submodule "bundle/vim-autocomplete"]
-	path = bundle/vim-autocomplete
-	url = https://github.com/Valloric/YouCompleteMe.git
+	url = https://github.com/alex-fedorov/Atomic-Save.git
 [submodule "bundle/browser.vim"]
 	path = bundle/browser.vim
 	url = https://github.com/vim-scripts/browser.vim.git
@@ -124,3 +121,6 @@
 [submodule "bundle/vim-instant-markdown"]
 	path = bundle/vim-instant-markdown
 	url = https://github.com/suan/vim-instant-markdown.git
+[submodule "bundle/vim-tslime"]
+	path = bundle/vim-tslime
+	url = https://github.com/LnL7/vim-tslime.git
