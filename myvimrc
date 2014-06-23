@@ -6,6 +6,8 @@ nnoremap <C-F> :CommandT<cr>
 nnoremap <f4> :BufExplorer<cr>
 colorscheme monokai
 
+nmap <F1> :call dev_notes#note()<cr>
+
 set tabstop=2
 set shiftwidth=2
 set expandtab

@@ -124,3 +124,6 @@
 [submodule "bundle/vim-tslime"]
 	path = bundle/vim-tslime
 	url = https://github.com/LnL7/vim-tslime.git
+[submodule "bundle/vim-dev-notes"]
+	path = bundle/vim-dev-notes
+	url = https://github.com/alex-fedorov/vim-dev-notes.git
