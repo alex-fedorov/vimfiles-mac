@@ -6,7 +6,7 @@ nnoremap <C-F> :CommandT<cr>
 nnoremap <f4> :BufExplorer<cr>
 colorscheme monokai
 
-nmap <F1> :call dev_notes#note()<cr>
+nmap <F1> :call dev_notes#toggle_note()<cr>
 
 set tabstop=2
 set shiftwidth=2
@@ -126,7 +126,7 @@ noremap <F9> $?test ['"][^'"]\+['"] do<CR>^v/' do<CR>"ry :call RunTest(@r)<CR>
 
 
 " faster search
-set grepprg=ack-grep
+set grepprg=ack
 
 
 " switchers to change how word-wise ops working
