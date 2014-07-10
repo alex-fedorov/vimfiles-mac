@@ -3,8 +3,10 @@ source ~/.vim/vimrc
 set clipboard=unnamed
 
 nnoremap <C-F> :CommandT<cr>
-nnoremap <f4> :BufExplorer<cr>
+nnoremap <f4> :CommandTBuffer<cr>
 colorscheme monokai
+
+let g:CommandTFileScanner="find"
 
 nmap <F1> :call dev_notes#toggle_note()<cr>
 
@@ -29,7 +31,7 @@ set wildignore+=tmp/cache/assets/*
 " noremap <Left> <nop>
 " noremap <Right> <nop>
 
-nnoremap ; :
+" nnoremap ; :
 
 cabbrev gst Gstatus
 cabbrev gd Gdiff
@@ -125,11 +127,55 @@ noremap <F7> :call Send_to_Tmux(substitute("time testdrb {file}\n", "{file}", @%
 noremap <F9> $?test ['"][^'"]\+['"] do<CR>^v/' do<CR>"ry :call RunTest(@r)<CR>
 
 
-" faster search
-set grepprg=ack
+" fastest search
+set grepprg=ag\ --nogroup\ --nocolor
 
 
 " switchers to change how word-wise ops working
 noremap _ :set iskeyword-=_ <CR>
 noremap + :set iskeyword+=_ <CR>
+
+
+" Turns on HARD MODE
+inoremap <up> <nop>
+nnoremap <up> <nop>
+vnoremap <up> <nop>
+
+inoremap <down> <nop>
+nnoremap <down> <nop>
+vnoremap <down> <nop>
+
+inoremap <left> <nop>
+nnoremap <left> <nop>
+vnoremap <left> <nop>
+
+inoremap <right> <nop>
+nnoremap <right> <nop>
+vnoremap <right> <nop>
+
+inoremap <PageUp> <nop>
+nnoremap <PageUp> <nop>
+vnoremap <PageUp> <nop>
+
+inoremap <PageDown> <nop>
+nnoremap <PageDown> <nop>
+vnoremap <PageDown> <nop>
+
+nnoremap k <nop>
+vnoremap k <nop>
+nnoremap gk <nop>
+vnoremap gk <nop>
+
+nnoremap j <nop>
+vnoremap j <nop>
+nnoremap gj <nop>
+vnoremap gj <nop>
+
+nnoremap h <nop>
+vnoremap h <nop>
+
+nnoremap l <nop>
+vnoremap l <nop>
+
+set backspace=0
 
