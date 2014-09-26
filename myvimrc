@@ -1,14 +1,30 @@
+let mapleader="\t"
+
 source ~/.vim/vimrc
 
 set clipboard=unnamed
 
 nnoremap <C-F> :CommandT<cr>
-nnoremap <f4> :CommandTBuffer<cr>
+nnoremap <f4> :CommandTMRU<cr>
 colorscheme monokai
 
 let g:CommandTFileScanner="find"
 
 nmap <F1> :call dev_notes#toggle_note()<cr>
+
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap S <Plug>(easymotion-s)
+
+" Turn on case sensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
 set tabstop=2
 set shiftwidth=2
@@ -179,3 +195,14 @@ vnoremap l <nop>
 
 set backspace=0
 
+" Quickfix navigation with arrows
+nnoremap <right> :cn<cr>
+nnoremap <left> :cp<cr>
+
+" Arglist navigation with arrows
+nnoremap <down> :n<cr>
+nnoremap <up> :prev<cr>
+
+" Bufferlist navigation with jk
+nnoremap j :bprevious<cr>
+nnoremap k :bnext<cr>

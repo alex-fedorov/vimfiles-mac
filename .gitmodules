@@ -127,3 +127,6 @@
 [submodule "bundle/vim-dev-notes"]
 	path = bundle/vim-dev-notes
 	url = https://github.com/alex-fedorov/vim-dev-notes.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
